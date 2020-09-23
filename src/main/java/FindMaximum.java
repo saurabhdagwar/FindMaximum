@@ -13,9 +13,6 @@ public class FindMaximum<E extends Comparable<E>> {
       public FindMaximum(List<E> listvalues) {
         this.listvaues = listvalues;
     }
-    public E findmax(){
-        return Collections.max(listvaues);
-    }
 
     public E findMaximumValue() {
         if (value[0].compareTo(value[1]) > 0 && value[0].compareTo(value[2]) > 0) {
@@ -28,6 +25,9 @@ public class FindMaximum<E extends Comparable<E>> {
             return value[2];
         }
     }
-
-
+    public E printMax(){
+          E maxvalue = Collections.max(listvaues);
+        System.out.println("Maximum Value : "+maxvalue);
+        return  maxvalue;
+    }
 }

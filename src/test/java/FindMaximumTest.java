@@ -69,7 +69,7 @@ public class FindMaximumTest {
         list.add(79);
         list.add(51);
         list.add(69);
-        Object max = new FindMaximum<>(list).findmax();
+        Object max = new FindMaximum<>(list).printMax();
         Assert.assertEquals(79,max);
     }
     @Test
@@ -81,7 +81,7 @@ public class FindMaximumTest {
         list.add(52.8);
         list.add(49.1);
         list.add(69.5);
-        Object max = new FindMaximum<>(list).findmax();
+        Object max = new FindMaximum<>(list).printMax();
         Assert.assertEquals(83.3,max);
     }
     @Test
@@ -92,10 +92,7 @@ public class FindMaximumTest {
         list.add("Kivi");
         list.add("Strawberrie");
         list.add("Peach");
-        Object max = new FindMaximum<>(list).findmax();
+        Object max = new FindMaximum<>(list).printMax();
         Assert.assertEquals("Strawberrie",max);
     }
-
-
-
 }
