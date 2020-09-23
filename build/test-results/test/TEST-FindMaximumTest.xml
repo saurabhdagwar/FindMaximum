@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FindMaximumTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-09-23T03:55:24" hostname="DESKTOP-JVE4C36" time="0.003">
+<testsuite name="FindMaximumTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-09-23T04:24:02" hostname="DESKTOP-JVE4C36" time="0.005">
   <properties/>
-  <testcase name="givingNumbers_shouldReturnMax_SecondNumber" classname="FindMaximumTest" time="0.003"/>
-  <testcase name="givingNumbers_shouldReturnMax_FirstNumber" classname="FindMaximumTest" time="0.0"/>
-  <testcase name="givingNumbers_shouldReturnMax_ThirdNumber" classname="FindMaximumTest" time="0.0"/>
+  <testcase name="givingFlots_shouldReturnMaxAt_thirdPlace" classname="FindMaximumTest" time="0.002"/>
+  <testcase name="givingFlots_shouldReturnMaxAt_secondPlace" classname="FindMaximumTest" time="0.0"/>
+  <testcase name="givingFlots_shouldReturnMaxAt_firstPlace" classname="FindMaximumTest" time="0.0"/>
+  <testcase name="givingNumbers_shouldReturnMax_FirstFirstPlace" classname="FindMaximumTest" time="0.001"/>
+  <testcase name="givingNumbers_shouldReturnMax_ThirdPlace" classname="FindMaximumTest" time="0.001"/>
+  <testcase name="givingNumbers_shouldReturnMax_SecondPlace" classname="FindMaximumTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
