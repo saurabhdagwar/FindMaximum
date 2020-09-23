@@ -4,59 +4,57 @@ import org.junit.Test;
 public class FindMaximumTest {
 
     @Test
-    public void givingNumbers_shouldReturnMax_FirstFirstPlace()  {
-        FindMaximum findMaximum = new FindMaximum();
-        int maximum = findMaximum.maximumNumber(20,10,15);
-            Assert.assertEquals(20,maximum);
+    public void givingNumbers_shouldReturnMax_FirstPlace()  {
+        Integer[] values = {100 , 70 , 30 };
+        Integer maximum = new FindMaximum<>(values).findMaximumValue();
+            Assert.assertEquals((Integer) 100 , maximum);
     }
     @Test
     public void givingNumbers_shouldReturnMax_SecondPlace()  {
-        FindMaximum findMaximum = new FindMaximum();
-        int maximum = findMaximum.maximumNumber(20,33,15);
-        Assert.assertEquals(33,maximum);
+        Integer[] values = {70 , 100 , 30 };
+        Integer maximum = new FindMaximum<>(values).findMaximumValue();
+        Assert.assertEquals((Integer) 100 , maximum);
     }
     @Test
     public void givingNumbers_shouldReturnMax_ThirdPlace()  {
-        FindMaximum findMaximum = new FindMaximum();
-        int maximum = findMaximum.maximumNumber(20,33,40);
-        Assert.assertEquals(40,maximum);
-    }
-
-    @Test
-    public void givingFlots_shouldReturnMaxAt_firstPlace() {
-        FindMaximum findMaximum = new FindMaximum();
-        Double maximum = findMaximum.maximumFloat(22.7,11.53,15.4);
-        Assert.assertEquals((Double) 22.7,maximum);
+        Integer[] values = {70 , 40 , 100 };
+        Integer maximum = new FindMaximum<>(values).findMaximumValue();
+        Assert.assertEquals((Integer) 100 , maximum);
     }
     @Test
-    public void givingFlots_shouldReturnMaxAt_secondPlace() {
-        FindMaximum findMaximum = new FindMaximum();
-        Double maximum = findMaximum.maximumFloat(15.4,22.7,11.53);
-        Assert.assertEquals((Double) 22.7,maximum);
+    public void givingDouble_shouldReturnMax_FirstPlace()  {
+        Double[] values = {117.6 , 93.5 , 67.3 };
+        Double maximum = new FindMaximum<>(values).findMaximumValue();
+        Assert.assertEquals((Double) 117.6 , maximum);
     }
     @Test
-    public void givingFlots_shouldReturnMaxAt_thirdPlace() {
-        FindMaximum findMaximum = new FindMaximum();
-        Double maximum = findMaximum.maximumFloat(11.53,15.4,22.7);
-        Assert.assertEquals((Double) 22.7,maximum);
-    }
-
-    @Test
-    public void givingString_shouldReturnMaxAt_firstPosition() {
-        FindMaximum findMaximum  = new FindMaximum();
-        String maximum = findMaximum.maximumString("Banana","Peach","Apple");
-        Assert.assertEquals((String) "Banana",maximum);
+    public void givingDouble_shouldReturnMax_SecondPlace()  {
+        Double[] values = {93.5 , 117.6 , 67.3 };
+        Double maximum = new FindMaximum<>(values).findMaximumValue();
+        Assert.assertEquals((Double) 117.6 , maximum);
     }
     @Test
-    public void givingString_shouldReturnMaxAt_secondPosition() {
-        FindMaximum findMaximum  = new FindMaximum();
-        String maximum = findMaximum.maximumString("Apple","Banana","Peach");
-        Assert.assertEquals((String) "Banana",maximum);
+    public void givingDouble_shouldReturnMax_ThirdPlace()  {
+        Double[] values = { 104.2, 93.5 , 117.6 };
+        Double maximum = new FindMaximum<>(values).findMaximumValue();
+        Assert.assertEquals((Double) 117.6 , maximum);
     }
     @Test
-    public void givingString_shouldReturnMaxAt_thirdPosition() {
-        FindMaximum findMaximum  = new FindMaximum();
-        String maximum = findMaximum.maximumString("Apple","Peach","Banana");
-        Assert.assertEquals((String) "Banana",maximum);
+    public void givingString_shouldReturnMax_firstPlace() {
+        String values[] = {"Peach","Apple","Banana"};
+        String maximum = new FindMaximum<>(values).findMaximumValue();
+        Assert.assertEquals("Peach", maximum  );
+    }
+    @Test
+    public void givingString_shouldReturnMax_secondPlace() {
+        String values[] = {"Apple","Peach","Banana"};
+        String maximum = new FindMaximum<>(values).findMaximumValue();
+        Assert.assertEquals("Peach", maximum  );
+    }
+    @Test
+    public void givingString_shouldReturnMax_thirdPlace() {
+        String values[] = {"Banana","Apple","Peach"};
+        String maximum = new FindMaximum<>(values).findMaximumValue();
+        Assert.assertEquals("Peach", maximum  );
     }
 }
