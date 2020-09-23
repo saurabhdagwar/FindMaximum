@@ -40,4 +40,23 @@ public class FindMaximumTest {
         Double maximum = findMaximum.maximumFloat(11.53,15.4,22.7);
         Assert.assertEquals((Double) 22.7,maximum);
     }
+
+    @Test
+    public void givingString_shouldReturnMaxAt_firstPosition() {
+        FindMaximum findMaximum  = new FindMaximum();
+        String maximum = findMaximum.maximumString("Banana","Peach","Apple");
+        Assert.assertEquals((String) "Banana",maximum);
+    }
+    @Test
+    public void givingString_shouldReturnMaxAt_secondPosition() {
+        FindMaximum findMaximum  = new FindMaximum();
+        String maximum = findMaximum.maximumString("Apple","Banana","Peach");
+        Assert.assertEquals((String) "Banana",maximum);
+    }
+    @Test
+    public void givingString_shouldReturnMaxAt_thirdPosition() {
+        FindMaximum findMaximum  = new FindMaximum();
+        String maximum = findMaximum.maximumString("Apple","Peach","Banana");
+        Assert.assertEquals((String) "Banana",maximum);
+    }
 }
