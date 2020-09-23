@@ -1,8 +1,10 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class FindMaximumTest {
+import java.util.LinkedList;
+import java.util.List;
 
+public class FindMaximumTest {
     @Test
     public void givingNumbers_shouldReturnMax_FirstPlace()  {
         Integer[] values = {100 , 70 , 30 };
@@ -57,4 +59,43 @@ public class FindMaximumTest {
         String maximum = new FindMaximum<>(values).findMaximumValue();
         Assert.assertEquals("Peach", maximum  );
     }
+
+    @Test
+    public void givingNumbers_shouldReturnMax() {
+        List<Integer> list = new LinkedList<>();
+        list.add(38);
+        list.add(63);
+        list.add(29);
+        list.add(79);
+        list.add(51);
+        list.add(69);
+        Object max = new FindMaximum<>(list).findmax();
+        Assert.assertEquals(79,max);
+    }
+    @Test
+    public void givingDouble_shouldReturnMax() {
+        List<Double> list = new LinkedList<>();
+        list.add(26.8);
+        list.add(43.7);
+        list.add(83.3);
+        list.add(52.8);
+        list.add(49.1);
+        list.add(69.5);
+        Object max = new FindMaximum<>(list).findmax();
+        Assert.assertEquals(83.3,max);
+    }
+    @Test
+    public void givingString_shouldReturnMax() {
+        List<String> list = new LinkedList<>();
+        list.add("Banana");
+        list.add("Orange");
+        list.add("Kivi");
+        list.add("Strawberrie");
+        list.add("Peach");
+        Object max = new FindMaximum<>(list).findmax();
+        Assert.assertEquals("Strawberrie",max);
+    }
+
+
+
 }

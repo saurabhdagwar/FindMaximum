@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FindMaximumTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-09-23T08:50:52" hostname="DESKTOP-JVE4C36" time="0.02">
+<testsuite name="FindMaximumTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2020-09-23T14:55:19" hostname="DESKTOP-JVE4C36" time="165.275">
   <properties/>
-  <testcase name="givingString_shouldReturnMax_secondPlace" classname="FindMaximumTest" time="0.004"/>
-  <testcase name="givingDouble_shouldReturnMax_SecondPlace" classname="FindMaximumTest" time="0.0"/>
-  <testcase name="givingDouble_shouldReturnMax_FirstPlace" classname="FindMaximumTest" time="0.001"/>
-  <testcase name="givingString_shouldReturnMax_thirdPlace" classname="FindMaximumTest" time="0.001"/>
-  <testcase name="givingNumbers_shouldReturnMax_ThirdPlace" classname="FindMaximumTest" time="0.0"/>
-  <testcase name="givingString_shouldReturnMax_firstPlace" classname="FindMaximumTest" time="0.001"/>
-  <testcase name="givingNumbers_shouldReturnMax_FirstPlace" classname="FindMaximumTest" time="0.001"/>
-  <testcase name="givingNumbers_shouldReturnMax_SecondPlace" classname="FindMaximumTest" time="0.001"/>
-  <testcase name="givingDouble_shouldReturnMax_ThirdPlace" classname="FindMaximumTest" time="0.001"/>
+  <testcase name="givingString_shouldReturnMax" classname="FindMaximumTest" time="165.275">
+    <skipped/>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
