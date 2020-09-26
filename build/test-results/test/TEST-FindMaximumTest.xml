@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FindMaximumTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-09-26T06:17:46" hostname="DESKTOP-JVE4C36" time="0.036">
+<testsuite name="FindMaximumTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-09-26T08:59:44" hostname="DESKTOP-JVE4C36" time="0.063">
   <properties/>
-  <testcase name="givingString_shouldReturnMax_secondPlace" classname="FindMaximumTest" time="0.012"/>
-  <testcase name="givingDouble_shouldReturnMax_SecondPlace" classname="FindMaximumTest" time="0.004"/>
-  <testcase name="givingString_shouldReturnMax" classname="FindMaximumTest" time="0.001"/>
+  <testcase name="givingString_shouldReturnMax_secondPlace" classname="FindMaximumTest" time="0.039"/>
+  <testcase name="givingDouble_shouldReturnMax_SecondPlace" classname="FindMaximumTest" time="0.008"/>
+  <testcase name="givingString_shouldReturnMax" classname="FindMaximumTest" time="0.002"/>
   <testcase name="givingDouble_shouldReturnMax_FirstPlace" classname="FindMaximumTest" time="0.001"/>
-  <testcase name="givingFloat_shouldReturnMax" classname="FindMaximumTest" time="0.001"/>
-  <testcase name="givingString_shouldReturnMax_thirdPlace" classname="FindMaximumTest" time="0.001"/>
+  <testcase name="givingFloat_shouldReturnMax" classname="FindMaximumTest" time="0.0"/>
+  <testcase name="givingString_shouldReturnMax_thirdPlace" classname="FindMaximumTest" time="0.006"/>
   <testcase name="givingNumbers_shouldReturnMax" classname="FindMaximumTest" time="0.001"/>
-  <testcase name="givingNumbers_shouldReturnMax_ThirdPlace" classname="FindMaximumTest" time="0.001"/>
-  <testcase name="givingString_shouldReturnMax_firstPlace" classname="FindMaximumTest" time="0.001"/>
-  <testcase name="givingNumbers_shouldReturnMax_FirstPlace" classname="FindMaximumTest" time="0.002"/>
+  <testcase name="givingNumbers_shouldReturnMax_ThirdPlace" classname="FindMaximumTest" time="0.0"/>
+  <testcase name="givingString_shouldReturnMax_firstPlace" classname="FindMaximumTest" time="0.0"/>
+  <testcase name="givingNumbers_shouldReturnMax_FirstPlace" classname="FindMaximumTest" time="0.001"/>
   <testcase name="givingNumbers_shouldReturnMax_SecondPlace" classname="FindMaximumTest" time="0.001"/>
-  <testcase name="givingDouble_shouldReturnMax_ThirdPlace" classname="FindMaximumTest" time="0.003"/>
+  <testcase name="givingDouble_shouldReturnMax_ThirdPlace" classname="FindMaximumTest" time="0.0"/>
   <system-out><![CDATA[Maximum Value : Peach
 Maximum Value : 117.6
 Maximum Value : Strawberry
